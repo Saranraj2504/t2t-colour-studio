@@ -4,39 +4,35 @@
 <head>
   <meta charset="UTF-8">
 
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
 
-  <meta
-    name="description"
-    content="T2T Colour Studio - Hair, beauty, hair colouring, waxing, bridal makeup and grooming services in Sankagiri."
-  >
+  <meta name="description"
+        content="T2T Colour Studio - Hair styling, hair colouring, waxing, skin care and bridal makeup services in Sankagiri.">
 
   <title>T2T Colour Studio | Beauty & Bridal Studio</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect"
+        href="https://fonts.googleapis.com">
 
-  <link
-    rel="preconnect"
-    href="https://fonts.gstatic.com"
-    crossorigin
-  >
+  <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
 
-  <link
-    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
-    rel="stylesheet"
-  >
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet"
+        href="style.css">
 </head>
 
 
 <body>
 
 
-<!-- ================= HEADER ================= -->
+<!-- =========================================================
+     HEADER
+========================================================= -->
 
 <header class="site-header">
 
@@ -66,9 +62,10 @@
     <button
       class="menu-btn"
       aria-label="Open menu"
-      onclick="toggleMenu()"
-    >
+      onclick="toggleMenu()">
+
       ☰
+
     </button>
 
 
@@ -97,9 +94,10 @@
       <a
         class="nav-book"
         href="https://wa.me/917538860430?text=Hello%20T2T%20Colour%20Studio%2C%20I%20would%20like%20to%20book%20an%20appointment."
-        target="_blank"
-      >
+        target="_blank">
+
         Book Now
+
       </a>
 
     </nav>
@@ -110,14 +108,21 @@
 
 
 
+<!-- =========================================================
+     MAIN
+========================================================= -->
+
 <main>
 
 
-<!-- ================= HERO ================= -->
+<!-- =========================================================
+     HOME / HERO
+========================================================= -->
 
 <section id="home" class="hero">
 
   <div class="hero-overlay"></div>
+
 
   <div class="container hero-content">
 
@@ -127,16 +132,22 @@
 
 
     <h1>
-      Feel beautiful.
-      <br>
-      <em>Look confident.</em>
+
+      Feel beautiful.<br>
+
+      <em>
+        Look confident.
+      </em>
+
     </h1>
 
 
     <p class="hero-text">
-      Hair styling, hair colouring, waxing, skin care
-      and bridal makeup — thoughtfully designed for
-      your special look.
+
+      Hair styling, hair colouring, waxing,
+      skin care and bridal makeup —
+      thoughtfully designed for your special look.
+
     </p>
 
 
@@ -145,17 +156,19 @@
       <a
         class="btn primary"
         href="https://wa.me/917538860430?text=Hello%20T2T%20Colour%20Studio%2C%20I%20would%20like%20to%20book%20an%20appointment."
-        target="_blank"
-      >
+        target="_blank">
+
         WhatsApp Booking
+
       </a>
 
 
       <a
         class="btn secondary"
-        href="#services"
-      >
+        href="#services">
+
         Explore Services
+
       </a>
 
     </div>
@@ -167,17 +180,34 @@
         ✦
       </span>
 
-      Personalised beauty services for every occasion
+      Personalised beauty services
+      for every occasion
 
     </div>
 
   </div>
 
+
+  <!-- =====================================================
+       SCISSORS IMAGE
+  ====================================================== -->
+
+  <div class="hero-tools">
+
+    <img
+      src="scissors.png"
+      alt="Professional salon scissors">
+
+  </div>
+
+
 </section>
 
 
 
-<!-- ================= QUICK INFO ================= -->
+<!-- =========================================================
+     QUICK INFORMATION
+========================================================= -->
 
 <section class="quick-info">
 
@@ -274,7 +304,9 @@
 
 
 
-<!-- ================= SERVICES ================= -->
+<!-- =========================================================
+     SERVICES
+========================================================= -->
 
 <section id="services" class="section">
 
@@ -292,8 +324,8 @@
       </h2>
 
       <p>
-        Explore our professional hair, beauty, waxing,
-        skin care and bridal services.
+        Choose a service and contact us
+        for current pricing and appointment availability.
       </p>
 
     </div>
@@ -303,7 +335,7 @@
     <div class="service-layout">
 
 
-      <!-- SIDEBAR -->
+      <!-- SERVICE SIDEBAR -->
 
       <aside class="service-sidebar">
 
@@ -314,8 +346,7 @@
             id="serviceSearch"
             type="search"
             placeholder="Search services..."
-            oninput="filterServices()"
-          >
+            oninput="filterServices()">
 
           <span>
             ⌕
@@ -327,63 +358,60 @@
         <button
           class="category active"
           data-category="all"
-          onclick="selectCategory('all', this)"
-        >
+          onclick="selectCategory('all', this)">
+
           All Services
+
         </button>
 
 
         <button
           class="category"
           data-category="hair"
-          onclick="selectCategory('hair', this)"
-        >
+          onclick="selectCategory('hair', this)">
+
           Hair Care
+
         </button>
 
 
         <button
           class="category"
-          data-category="cut"
-          onclick="selectCategory('cut', this)"
-        >
-          Hair Cuts
-        </button>
+          data-category="nails"
+          onclick="selectCategory('nails', this)">
 
+          Nails
 
-        <button
-          class="category"
-          data-category="colour"
-          onclick="selectCategory('colour', this)"
-        >
-          Hair Colour
         </button>
 
 
         <button
           class="category"
           data-category="removal"
-          onclick="selectCategory('removal', this)"
-        >
+          onclick="selectCategory('removal', this)">
+
           Hair Removal
+
         </button>
 
 
         <button
           class="category"
           data-category="skin"
-          onclick="selectCategory('skin', this)"
-        >
+          onclick="selectCategory('skin', this)">
+
           Skin Care
+
         </button>
 
 
         <button
           class="category"
           data-category="bridal"
-          onclick="selectCategory('bridal', this)"
-        >
+          onclick="selectCategory('bridal', this)">
+
           Bridal Makeup
+
         </button>
 
 
@@ -395,16 +423,15 @@
 
       <div
         class="services-grid"
-        id="servicesGrid"
-      >
+        id="servicesGrid">
+
 
 
         <!-- HAIR STYLING -->
 
         <article
           class="service-card"
-          data-category="hair"
-        >
+          data-category="hair">
 
           <div class="card-icon">
             ✦
@@ -415,164 +442,15 @@
           </h3>
 
           <p>
-            Personalised styling for everyday looks
-            and special occasions.
+            Personalised styling for everyday
+            looks and special occasions.
           </p>
 
           <button
-            onclick="bookService('Hair Styling')"
-          >
+            onclick="bookService('Hair Styling')">
+
             Enquire on WhatsApp →
-          </button>
 
-        </article>
-
-
-
-        <!-- LAYER CUT -->
-
-        <article
-          class="service-card"
-          data-category="cut"
-        >
-
-          <div class="card-icon">
-            ✂
-          </div>
-
-          <h3>
-            Layer Cut
-          </h3>
-
-          <p>
-            Stylish layered haircut designed to add
-            shape, movement and volume.
-          </p>
-
-          <button
-            onclick="bookService('Layer Cut')"
-          >
-            Enquire on WhatsApp →
-          </button>
-
-        </article>
-
-
-
-        <!-- STEP CUT -->
-
-        <article
-          class="service-card"
-          data-category="cut"
-        >
-
-          <div class="card-icon">
-            ✂
-          </div>
-
-          <h3>
-            Step Cut
-          </h3>
-
-          <p>
-            Modern stepped haircut for a fashionable
-            and structured look.
-          </p>
-
-          <button
-            onclick="bookService('Step Cut')"
-          >
-            Enquire on WhatsApp →
-          </button>
-
-        </article>
-
-
-
-        <!-- U CUT -->
-
-        <article
-          class="service-card"
-          data-category="cut"
-        >
-
-          <div class="card-icon">
-            ✂
-          </div>
-
-          <h3>
-            U Cut
-          </h3>
-
-          <p>
-            Classic U-shaped haircut for an elegant
-            and natural finish.
-          </p>
-
-          <button
-            onclick="bookService('U Cut')"
-          >
-            Enquire on WhatsApp →
-          </button>
-
-        </article>
-
-
-
-        <!-- FEATHER CUT -->
-
-        <article
-          class="service-card"
-          data-category="cut"
-        >
-
-          <div class="card-icon">
-            ✂
-          </div>
-
-          <h3>
-            Feather Cut
-          </h3>
-
-          <p>
-            Lightweight feathered layers for a soft
-            and stylish appearance.
-          </p>
-
-          <button
-            onclick="bookService('Feather Cut')"
-          >
-            Enquire on WhatsApp →
-          </button>
-
-        </article>
-
-
-
-        <!-- BOB CUT -->
-
-        <article
-          class="service-card"
-          data-category="cut"
-        >
-
-          <div class="card-icon">
-            ✂
-          </div>
-
-          <h3>
-            Bob Cut
-          </h3>
-
-          <p>
-            Contemporary bob haircut customised to
-            your preferred length and style.
-          </p>
-
-          <button
-            onclick="bookService('Bob Cut')"
-          >
-            Enquire on WhatsApp →
           </button>
 
         </article>
@@ -583,8 +461,7 @@
 
         <article
           class="service-card"
-          data-category="cut"
-        >
+          data-category="hair">
 
           <div class="card-icon">
             ✂
@@ -595,14 +472,165 @@
           </h3>
 
           <p>
-            Modern cuts tailored to your face shape
-            and preferred style.
+            Modern cuts tailored to your
+            face shape and preferred style.
           </p>
 
           <button
-            onclick="bookService('Advance Hair Cut')"
-          >
+            onclick="bookService('Advance Hair Cut')">
+
             Enquire on WhatsApp →
+
+          </button>
+
+        </article>
+
+
+
+        <!-- LAYER CUT -->
+
+        <article
+          class="service-card"
+          data-category="hair">
+
+          <div class="card-icon">
+            ✂
+          </div>
+
+          <h3>
+            Layer Cut
+          </h3>
+
+          <p>
+            Stylish layered haircut designed
+            to add movement, shape and volume.
+          </p>
+
+          <button
+            onclick="bookService('Layer Cut')">
+
+            Enquire on WhatsApp →
+
+          </button>
+
+        </article>
+
+
+
+        <!-- STEP CUT -->
+
+        <article
+          class="service-card"
+          data-category="hair">
+
+          <div class="card-icon">
+            ✦
+          </div>
+
+          <h3>
+            Step Cut
+          </h3>
+
+          <p>
+            Trendy step haircut with a
+            stylish and structured finish.
+          </p>
+
+          <button
+            onclick="bookService('Step Cut')">
+
+            Enquire on WhatsApp →
+
+          </button>
+
+        </article>
+
+
+
+        <!-- U CUT -->
+
+        <article
+          class="service-card"
+          data-category="hair">
+
+          <div class="card-icon">
+            ♢
+          </div>
+
+          <h3>
+            U Cut
+          </h3>
+
+          <p>
+            Classic U-shaped haircut for
+            a soft and elegant appearance.
+          </p>
+
+          <button
+            onclick="bookService('U Cut')">
+
+            Enquire on WhatsApp →
+
+          </button>
+
+        </article>
+
+
+
+        <!-- V CUT -->
+
+        <article
+          class="service-card"
+          data-category="hair">
+
+          <div class="card-icon">
+            ♢
+          </div>
+
+          <h3>
+            V Cut
+          </h3>
+
+          <p>
+            Elegant V-shaped haircut that
+            enhances long hair styling.
+          </p>
+
+          <button
+            onclick="bookService('V Cut')">
+
+            Enquire on WhatsApp →
+
+          </button>
+
+        </article>
+
+
+
+        <!-- BOB CUT -->
+
+        <article
+          class="service-card"
+          data-category="hair">
+
+          <div class="card-icon">
+            ✦
+          </div>
+
+          <h3>
+            Bob Cut
+          </h3>
+
+          <p>
+            Contemporary short haircut
+            for a fresh and confident look.
+          </p>
+
+          <button
+            onclick="bookService('Bob Cut')">
+
+            Enquire on WhatsApp →
+
           </button>
 
         </article>
@@ -613,8 +641,7 @@
 
         <article
           class="service-card"
-          data-category="colour"
-        >
+          data-category="hair">
 
           <div class="card-icon">
             ◉
@@ -625,14 +652,15 @@
           </h3>
 
           <p>
-            Colour services to refresh, transform
-            or enhance your look.
+            Colour services to refresh,
+            transform or enhance your look.
           </p>
 
           <button
-            onclick="bookService('Hair Colour')"
-          >
+            onclick="bookService('Hair Colour')">
+
             Enquire on WhatsApp →
+
           </button>
 
         </article>
@@ -643,8 +671,7 @@
 
         <article
           class="service-card"
-          data-category="hair"
-        >
+          data-category="nails">
 
           <div class="card-icon">
             ♡
@@ -655,56 +682,56 @@
           </h3>
 
           <p>
-            Carefully finished hand and nail care
-            for a polished look.
+            Carefully finished nail and hand
+            care for a polished look.
           </p>
 
           <button
-            onclick="bookService('Premium Manicure')"
-          >
+            onclick="bookService('Premium Manicure')">
+
             Enquire on WhatsApp →
+
           </button>
 
         </article>
 
 
 
-        <!-- LEG WAXING -->
+        <!-- ANTI TAN PEDICURE -->
 
         <article
           class="service-card"
-          data-category="removal"
-        >
+          data-category="nails">
 
           <div class="card-icon">
-            ✧
+            ♡
           </div>
 
           <h3>
-            Leg Waxing
+            Anti-Tan Pedicure
           </h3>
 
           <p>
-            Professional leg waxing for smooth and
-            well-groomed skin.
+            Relaxing foot care with attention
+            to skin appearance and comfort.
           </p>
 
           <button
-            onclick="bookService('Leg Waxing')"
-          >
+            onclick="bookService('Anti-Tan Pedicure')">
+
             Enquire on WhatsApp →
+
           </button>
 
         </article>
 
 
 
-        <!-- THREADING -->
+        <!-- EYEBROW THREADING -->
 
         <article
           class="service-card"
-          data-category="removal"
-        >
+          data-category="removal">
 
           <div class="card-icon">
             ✧
@@ -715,26 +742,56 @@
           </h3>
 
           <p>
-            Neat eyebrow shaping for a clean and
-            defined finish.
+            Neat eyebrow shaping for a clean
+            and defined finish.
           </p>
 
           <button
-            onclick="bookService('Threading - Eyebrows')"
-          >
+            onclick="bookService('Threading - Eyebrows')">
+
             Enquire on WhatsApp →
+
           </button>
 
         </article>
 
 
 
-        <!-- SKIN -->
+        <!-- LEG WAXING -->
 
         <article
           class="service-card"
-          data-category="skin"
-        >
+          data-category="removal">
+
+          <div class="card-icon">
+            ✧
+          </div>
+
+          <h3>
+            Leg Waxing
+          </h3>
+
+          <p>
+            Professional waxing service
+            for smooth and comfortable skin.
+          </p>
+
+          <button
+            onclick="bookService('Leg Waxing')">
+
+            Enquire on WhatsApp →
+
+          </button>
+
+        </article>
+
+
+
+        <!-- SKIN TREATMENT -->
+
+        <article
+          class="service-card"
+          data-category="skin">
 
           <div class="card-icon">
             ✿
@@ -745,26 +802,26 @@
           </h3>
 
           <p>
-            Beauty and skin-care services tailored
-            to your needs.
+            Beauty and skin-care services
+            tailored to your needs.
           </p>
 
           <button
-            onclick="bookService('Skin Treatment')"
-          >
+            onclick="bookService('Skin Treatment')">
+
             Enquire on WhatsApp →
+
           </button>
 
         </article>
 
 
 
-        <!-- BRIDAL -->
+        <!-- BRIDAL MAKEUP -->
 
         <article
           class="service-card featured"
-          data-category="bridal"
-        >
+          data-category="bridal">
 
           <div class="card-icon">
             ♕
@@ -779,14 +836,15 @@
           </h3>
 
           <p>
-            Elegant bridal makeup and styling for
-            your most memorable moments.
+            Elegant bridal makeup and styling
+            for your most memorable moments.
           </p>
 
           <button
-            onclick="bookService('Bridal Makeup')"
-          >
+            onclick="bookService('Bridal Makeup')">
+
             Enquire on WhatsApp →
+
           </button>
 
         </article>
@@ -802,12 +860,11 @@
 
 
 
-<!-- ================= BRIDAL ================= -->
+<!-- =========================================================
+     BRIDAL
+========================================================= -->
 
-<section
-  id="bridal"
-  class="bridal-section"
->
+<section id="bridal" class="bridal-section">
 
   <div class="container bridal-inner">
 
@@ -820,30 +877,37 @@
 
 
       <h2>
-        Bridal Makeup
-        <br>
+
+        Bridal Makeup<br>
+
         <em>
           with a personal touch.
         </em>
+
       </h2>
 
 
       <p>
-        From elegant traditional looks to modern
-        bridal styles, talk to us about your preferred
+
+        From elegant traditional looks
+        to modern bridal styles,
+        talk to us about your preferred
         makeup, hair and overall look.
+
       </p>
 
 
       <a
         class="btn light"
         href="https://wa.me/917538860430?text=Hello%20T2T%20Colour%20Studio%2C%20I%20am%20interested%20in%20Bridal%20Makeup."
-        target="_blank"
-      >
+        target="_blank">
+
         Ask About Bridal Packages
+
       </a>
 
     </div>
+
 
 
     <div class="bridal-art">
@@ -869,12 +933,12 @@
 
 
 
-<!-- ================= GALLERY ================= -->
+<!-- =========================================================
+     GALLERY
+========================================================= -->
 
-<section
-  id="gallery"
-  class="section gallery-section"
->
+<section id="gallery"
+         class="section gallery-section">
 
   <div class="container">
 
@@ -890,8 +954,8 @@
       </h2>
 
       <p>
-        Explore our hair styling, bridal makeup,
-        hair colour and waxing services.
+        Explore our hair, bridal,
+        colour and beauty services.
       </p>
 
     </div>
@@ -907,8 +971,7 @@
 
         <img
           src="hair-styling-ai.png"
-          alt="AI Hair Styling at T2T Colour Studio"
-        >
+          alt="AI Hair Styling at T2T Colour Studio">
 
         <span>
           HAIR STYLING
@@ -922,14 +985,13 @@
 
 
 
-      <!-- BRIDAL MAKEUP -->
+      <!-- BRIDAL -->
 
       <div class="gallery-placeholder tall">
 
         <img
           src="bridal-makeup-ai.png"
-          alt="AI Bridal Makeup at T2T Colour Studio"
-        >
+          alt="AI Bridal Makeup at T2T Colour Studio">
 
         <span>
           BRIDAL
@@ -949,8 +1011,7 @@
 
         <img
           src="hair-colour-ai.png"
-          alt="AI Hair Colour at T2T Colour Studio"
-        >
+          alt="AI Hair Colour at T2T Colour Studio">
 
         <span>
           HAIR COLOUR
@@ -970,8 +1031,7 @@
 
         <img
           src="leg-wax-ai.png"
-          alt="AI Leg Waxing at T2T Colour Studio"
-        >
+          alt="AI Leg Waxing at T2T Colour Studio">
 
         <span>
           WAXING
@@ -992,15 +1052,17 @@
 
 
 
-<!-- ================= CONTACT ================= -->
+<!-- =========================================================
+     CONTACT
+========================================================= -->
 
-<section
-  id="contact"
-  class="contact-section"
->
+<section id="contact"
+         class="contact-section">
 
   <div class="container contact-grid">
 
+
+    <!-- CONTACT INFORMATION -->
 
     <div>
 
@@ -1015,9 +1077,12 @@
 
 
       <p class="contact-lead">
-        Call or WhatsApp us to check availability,
-        pricing and appointments.
+
+        Call or WhatsApp us to check
+        availability, pricing and appointments.
+
       </p>
+
 
 
       <div class="contact-list">
@@ -1044,6 +1109,7 @@
         </div>
 
 
+
         <div>
 
           <span>
@@ -1057,11 +1123,11 @@
             </small>
 
             <p>
-              1st Floor, RKS Building,
-              <br>
-              Old Edappadi Road, Sankagiri,
-              <br>
+
+              1st Floor, RKS Building,<br>
+              Old Edappadi Road, Sankagiri,<br>
               Tamil Nadu – 637301
+
             </p>
 
           </div>
@@ -1072,28 +1138,32 @@
       </div>
 
 
+
       <div class="contact-actions">
 
 
         <a
           class="btn primary"
           href="https://wa.me/917538860430?text=Hello%20T2T%20Colour%20Studio%2C%20I%20would%20like%20to%20book%20an%20appointment."
-          target="_blank"
-        >
+          target="_blank">
+
           WhatsApp Us
+
         </a>
 
 
         <a
           class="btn outline"
           href="https://www.google.com/maps/search/?api=1&query=RKS+Building+Old+Edappadi+Road+Sankagiri+Tamil+Nadu+637301"
-          target="_blank"
-        >
+          target="_blank">
+
           Get Directions
+
         </a>
 
 
       </div>
+
 
     </div>
 
@@ -1103,15 +1173,19 @@
 
     <div class="contact-card">
 
+
       <h3>
         Appointment Enquiry
       </h3>
 
 
       <p>
-        Send your details and we'll open WhatsApp
-        with a ready-to-send message.
+
+        Send your details and we'll open
+        WhatsApp with a ready-to-send message.
+
       </p>
+
 
 
       <form onsubmit="sendEnquiry(event)">
@@ -1120,16 +1194,14 @@
         <input
           id="name"
           required
-          placeholder="Your name"
-        >
+          placeholder="Your name">
 
 
         <input
           id="phone"
           required
           type="tel"
-          placeholder="Your phone number"
-        >
+          placeholder="Your phone number">
 
 
         <select id="service">
@@ -1140,6 +1212,10 @@
 
           <option>
             Hair Styling
+          </option>
+
+          <option>
+            Advance Hair Cut
           </option>
 
           <option>
@@ -1155,15 +1231,11 @@
           </option>
 
           <option>
-            Feather Cut
+            V Cut
           </option>
 
           <option>
             Bob Cut
-          </option>
-
-          <option>
-            Advance Hair Cut
           </option>
 
           <option>
@@ -1175,11 +1247,15 @@
           </option>
 
           <option>
-            Leg Waxing
+            Anti-Tan Pedicure
           </option>
 
           <option>
             Threading - Eyebrows
+          </option>
+
+          <option>
+            Leg Waxing
           </option>
 
           <option>
@@ -1196,15 +1272,15 @@
         <textarea
           id="message"
           rows="3"
-          placeholder="Preferred date/time or any message"
-        ></textarea>
+          placeholder="Preferred date/time or any message"></textarea>
 
 
         <button
           class="btn primary full"
-          type="submit"
-        >
+          type="submit">
+
           Continue to WhatsApp
+
         </button>
 
 
@@ -1222,7 +1298,9 @@
 
 
 
-<!-- ================= FOOTER ================= -->
+<!-- =========================================================
+     FOOTER
+========================================================= -->
 
 <footer>
 
@@ -1243,10 +1321,11 @@
 
 
     <p>
-      ©
-      <span id="year"></span>
+
+      © <span id="year"></span>
       T2T Colour Studio.
       All rights reserved.
+
     </p>
 
 
@@ -1256,18 +1335,25 @@
 
 
 
-<!-- ================= FLOATING WHATSAPP ================= -->
+<!-- =========================================================
+     FLOATING WHATSAPP
+========================================================= -->
 
 <a
   class="floating-wa"
   href="https://wa.me/917538860430?text=Hello%20T2T%20Colour%20Studio%2C%20I%20would%20like%20to%20make%20an%20appointment."
   target="_blank"
-  aria-label="WhatsApp"
->
+  aria-label="WhatsApp">
+
   ◉
+
 </a>
 
 
+
+<!-- =========================================================
+     JAVASCRIPT
+========================================================= -->
 
 <script src="script.js"></script>
 

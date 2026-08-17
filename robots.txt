@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://saranraj2504.github.io/t2t-colour-studio/sitemap.xml
